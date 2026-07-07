@@ -14,9 +14,13 @@ Before running the application, configure the following files with your local en
 Database Setup
 
 Create a local MySQL database:
+
 sql
+
 CREATE DATABASE chatdb;
+
 USE chatdb;
+
 CREATE TABLE Messages
 (
     Id INT AUTO_INCREMENT PRIMARY KEY,
@@ -24,6 +28,7 @@ CREATE TABLE Messages
     Text VARCHAR(500) NOT NULL,
     Created DATETIME NOT NULL
 );
+
 Update the `DefaultConnection` value in `ChatServer/appsettings.json` with your local MySQL server address, database credentials, and other required connection settings before running the application.
 
 For security reasons, sensitive information such as:
