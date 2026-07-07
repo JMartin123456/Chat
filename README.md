@@ -29,11 +29,11 @@ Before running the application, configure the following files with your local en
 - `ChatServer/appsettings.json`
   - Update the `DefaultConnection` string with your local MySQL server, database name, username and password.
 - `ChatServer/Properties/launchSettings.json`
-  - Configure the local application URLs if necessary.
+  - Configure the local application URLs.
 - `ChatClient/ChatService.cs`
   - Set the SignalR server URL to match your local server configuration.
 - `ChatServer.http`
-  - Update the local API endpoint if you want to use the HTTP request examples.
+  - Update the local API endpoint.
 
 ## How It Works
 1. Client sends message via SignalR hub method (`SendMessage`)
