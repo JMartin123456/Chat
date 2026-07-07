@@ -1,3 +1,10 @@
+## Security
+For security reasons, sensitive information such as:
+database credentials,
+connection strings,
+local endpoints,
+are not included in this repository.
+
 ## Configuration
 
 Before running the application, configure the following files with your local environment settings:
@@ -30,13 +37,6 @@ CREATE TABLE Messages
 );
 
 Update the `DefaultConnection` value in `ChatServer/appsettings.json` with your local MySQL server address, database credentials, and other required connection settings before running the application.
-
-## Security
-For security reasons, sensitive information such as:
-database credentials,
-connection strings,
-local endpoints,
-are not included in this repository.
 
 ## How It Works
 1. Client sends message via SignalR hub method (`SendMessage`)
