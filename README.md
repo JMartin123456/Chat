@@ -24,7 +24,7 @@ CREATE TABLE Messages
     Text VARCHAR(500) NOT NULL,
     Created DATETIME NOT NULL
 );
-Update the 'DefaultConnection' value in 'ChatServer/appsettings.json' with your local MySQL server address, database credentials, and other required connection settings before running the application.
+Update the `DefaultConnection` value in `ChatServer/appsettings.json` with your local MySQL server address, database credentials, and other required connection settings before running the application.
 
 For security reasons, sensitive information such as:
 database credentials,
@@ -33,8 +33,8 @@ local endpoints,
 are not included in this repository.
 
 How It Works
-1. Client sends message via SignalR hub method ('SendMessage')
-2. Server receives message in 'ChatHub'
+1. Client sends message via SignalR hub method (`SendMessage`)
+2. Server receives message in `ChatHub`
 3. Message is stored in MySQL database
 4. Server broadcasts message to all connected clients
 5. All clients update UI instantly
