@@ -1,4 +1,4 @@
-Configuration
+## Configuration
 
 Before running the application, configure the following files with your local environment settings:
 - `ChatServer/appsettings.json`
@@ -11,7 +11,7 @@ Before running the application, configure the following files with your local en
   - Update the local API endpoint if you want to use the HTTP request examples.
 > **Note:** Local connection strings, endpoints and development URLs have been intentionally removed from this public repository.
 
-Database Setup
+## Database Setup
 
 Create a local MySQL database:
 
@@ -31,13 +31,14 @@ CREATE TABLE Messages
 
 Update the `DefaultConnection` value in `ChatServer/appsettings.json` with your local MySQL server address, database credentials, and other required connection settings before running the application.
 
+## Security
 For security reasons, sensitive information such as:
 database credentials,
 connection strings,
 local endpoints,
 are not included in this repository.
 
-How It Works
+## How It Works
 1. Client sends message via SignalR hub method (`SendMessage`)
 2. Server receives message in `ChatHub`
 3. Message is stored in MySQL database
